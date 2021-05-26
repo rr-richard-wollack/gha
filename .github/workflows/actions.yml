@@ -6,6 +6,13 @@ on:
       - master
       - 'feature/*'
       - 'feature/**'
+      - '!feature/featC'
+    tags:
+      - v1
+      - v1.*
+    paths:
+      - '**.js'
+      
   # repository_dispatch:
   #   types: [build]
   # pull_request:
